@@ -1,0 +1,38 @@
+.cardBox {
+  margin-top: 10%;
+  color: rgb(53, 45, 57);
+}
+.Testimonial__Title {
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: white;
+}
+.Testimonial__Title::before {
+  content: "";
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 5px;
+  background-color: white;
+  width: 30%;
+  height: 2px;
+  left: 0;
+}
+.Testimonial__Title::after {
+  content: "";
+  position: absolute;
+  margin-top: 20px;
+  margin-right: 5px;
+  background-color: white;
+  width: 30%;
+  height: 2px;
+  right: 0;
+}
+@media (max-width: 600px) {
+  .Testimonial__Title::before {
+    width: 20%;
+  }
+  .Testimonial__Title::after {
+    width: 20%;
+  }
+}
